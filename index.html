@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget/Waterfall Calculator</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+  <section id="calculator-section">
+    <h1>Budget/Waterfall Calculator</h1>
+
+    <div id="budget" class="editable">
+      Enter your budget: $<input type="number" id="budget-amount" min="1" step="1" value="1000" />
+
+      <p style="margin-bottom: 2px;">If your goal is leads then edit "Leads". If your goal is conversions then edit "Closed / Won".</p>
+      <p style="margin-top: 0;">You can also update your conversion percentages under "FUNNEL GOALS".</p>
+    </div>
+    
+
+    <div id="budget-calculator-table">
+
+      <div>FUNNEL</div>
+      <div>FUNNEL GOALS</div>
+      <div>WATERFALL</div>
+      <div>TOTAL COST PER</div>
+
+      <div>Total Impressions</div>
+      <div>n/a</div>
+      <div id="total-impressions-waterfall">-</div>
+      <div id="total-impressions-cost">-</div>
+      
+      <div>Total Clicks</div>
+      <div class="editable percent">
+        <input id="total-clicks-percentage" type="number" min="0" max="100" step=".01" value="2" />
+      </div>
+      <div id="total-clicks-waterfall">-</div>
+      <div id="total-clicks-cost">-</div>
+      
+      <div>Total Leads<br />(Form Fills)</div>
+      <div id="leads" class="editable percent">
+        <input id="total-leads-percentage" type="number" min="0" max="100" step=".01" value="5" />
+      </div>
+      <div class="editable">
+        <input id="total-leads-waterfall" type="text" value="1,310" />
+      </div>
+      <div id="total-leads-cost">-</div>
+      
+      <div>MQL</div>
+      <div class="editable percent">
+        <input id="mql-percentage" type="number" min="0" max="100" step=".01" value="20" />
+      </div>
+      <div id="mql-waterfall">-</div>
+      <div id="mql-cost">-</div>
+      
+      <div>SAL</div>
+      <div class="editable percent">
+        <input id="sal-percentage" type="number" min="0" max="100" step=".01" value="43.75" />
+      </div>
+      <div id="sal-waterfall">-</div>
+      <div id="sal-cost">-</div>
+      
+      <div>SQL</div>
+      <div class="editable percent">
+        <input id="sql-percentage" type="number" min="0" max="100" step=".01" value="63.33" />
+      </div>
+      <div id="sql-waterfall">-</div>
+      <div id="sql-cost">-</div>
+      
+      <div>Opportunity</div>
+      <div class="editable percent">
+        <input id="opportunity-percentage" type="number" min="0" max="100" step=".01" value="43.33" />
+      </div>
+      <div id="opportunity-waterfall"></div>
+      <div id="opportunity-cost">-</div>
+      
+      <div>Closed / Won</div>
+      <div class="editable percent">
+        <input id="conversion-percentage" type="number" min="0" max="100" step=".01" value="31.25" />
+      </div>
+      <div class="editable">
+        <input id="conversions-waterfall" type="text" value="10" />
+      </div>
+      <div id="conversion-cost">-</div>
+
+    </div>
+
+  </section>
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+
+  <script src="./scripts.js"></script>
+  
+</body>
+</html>
