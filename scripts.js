@@ -216,3 +216,13 @@ $(window).on('load keyup', function(event) {
 
   updateWaterfall();
 });
+
+
+
+// var formatNumber = function(number, format = false) {
+//   if ( format == 'currency' ) {
+//     return String( new Intl.NumberFormat('en-US').format(number) );
+//   } else {
+//     return String( new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(number) );
+//   }
+// };
